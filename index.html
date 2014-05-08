@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Holland Park</title>
+  <meta name="viewport" content="initial-scale=1, user-scalable=yes, maximum-scale=3.0" media="(device-height: 568px)"/>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+    
+
+  <link href="codiqa.ext.css" rel="stylesheet">
+  <link href="jquery.mobile-1.4.2.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="font/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="photoswipe.css">
+
+
+  <script src="jquery.min.js"></script>
+  <script src="jquery.mobile-1.4.2.min.js"></script>
+  <script src="codiqa.ext.js"></script>
+
+  <script src="script.js"></script>
+    <script type="text/javascript" src="js/klass.min.js"></script>
+<script type="text/javascript" src="js/code.photoswipe.jquery-3.0.5.min.js"></script>
+<script type="text/javascript" src="js/photoswipeinit.js"></script>
+<script type="text/javascript" src="js/prefilter.js"></script>
+
+</head>
+<body>
+<div data-role="page" data-control-title="holland park" id="pagehome">
+    <div role="main" class="ui-content" style="padding: 0%">
+        <div style=" text-align:center" data-controltype="image" id="coveranimate">
+            <img style="width: 100%; height: px" src="images/coveranimate.gif">
+        </div>
+        <a id="firstbutton" data-inline="true" data-transition="slidefade" href="#pageconcept"
+        class="ui-btn ui-btn-b buttonhome">
+            CONCEPT
+        </a>
+        <hr style="height:1px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;"
+        class="divide">
+        <a data-inline="true" data-transition="slidefade" href="#pageprofile"
+        class="ui-btn ui-btn-b buttonhome">
+            PROFILE
+        </a>
+        <hr style="height:1px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;"
+        class="divide">
+        <a data-inline="true" data-transition="slidefade" href="#pageskyvilla"
+        class="ui-btn ui-btn-b buttonhome">
+            UNITS
+        </a>
+        <hr style="height:1px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;"
+        class="divide">
+        <a data-inline="true" data-transition="slidefade" href="#pagegallery"
+        class="ui-btn ui-btn-b buttonhome">
+            GALLERY
+        </a>
+        <hr style="height:1px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;"
+        class="divide">
+        <a id="lastbutton" data-inline="true" data-transition="slidefade" href="#pagecontact"
+        class="ui-btn ui-btn-b buttonhome">
+            CONTACT
+        </a>
+    </div>
+</div>
+<div data-role="page" data-control-title="development concept" id="pageconcept" class="pageconcept">
+    <div data-theme="d" data-role="header" data-position="fixed" class="headers">
+        <span class="ui-title">
+        </span>
+        <a data-inline="true" data-direction="reverse" data-transition="slidefade"
+        href="#pagehome" data-icon="home" data-iconpos="left" class="ui-btn ui-btn-left ui-icon-home ui-btn-icon-left titlehomebutton">
+            home
+        </a>
+    </div>
+    <div role="main" class="ui-content" style="padding: 0%">
+        <div data-controltype="textblock" class="titlepage">
+            <p>
+                DEVELOPMENT CONCEPT
+            </p>
+        </div>
+        <ul data-role="listview" data-divider-theme="a" data-inset="false" class="titlelistview">
+            <li data-theme="b">
+                <a href="#pageinspiration" data-transition="slidefade">
+                        <img src="images/thumbinspiration.png" class="ui-li-thumb">
+                <h5>
+                    INSPIRATION
+                    </h5>
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#pagearchitecture" data-transition="slidefade">
+                                        <img src="images/thumbarchitecture.png" class="ui-li-thumb">
+
+                    <h5>ARCHITECTURE</h5>
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#pageinterior" data-transition="slidefade">
+                                        <img src="images/thumbinterior.png" class="ui-li-thumb">
+
+                   <h5> INTERIOR</h5>
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#pagefacilities" data-transition="slidefade">
+                                        <img src="images/thumbfacilities.png" class="ui-li-thumb">
+
+                   <h5>FACILITIES</h5>
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#pagemasterplan" data-transition="slidefade">
+                                        <img src="images/thumbmasterplan.png" class="ui-li-thumb">
+
+                    <h5>MASTERPLAN</h5>
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#pagelocation" data-transition="slidefade">
+                                        <img src="images/thumblocation.png" class="ui-li-thumb">
+
+                    <h5>LOCATION</h5>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div data-role="tabbar" data-iconpos="top" data-theme="d" class="tabmenu">
+        <ul>
+            <li>
+                <a href="#pageconcept" data-transition="fade" data-theme="" data-icon="bars">
+                    CONCEPT
+                </a>
+            </li>
+            <li>
+                <a href="#pageprofile" data-transition="fade" data-theme="" data-icon="star">
+                    PROFILE
+                </a>
+            </li>
+            <li>
+                <a href="#pageskyvilla" data-transition="fade" data-theme="" data-icon="info">
+                    UNITS
+                </a>
+            </li>
+            <li>
+                <a href="#pagegallery" data-transition="fade" data-theme="" data-icon="grid">
+                    GALLERY
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div data-role="page" data-control-title="inspiration" id="pageinspiration">
+    <div data-theme="d" data-role="header" data-position="fixed" class="headers">
+        <span class="ui-title">
+        </span>
+        <a data-inline="true" data-direction="reverse" data-transition="slidefade"
+        href="#pageconcept" data-icon="arrow-l" data-iconpos="left" class="ui-btn ui-btn-left ui-icon-arrow-l ui-btn-icon-left titlebackbutton">
+            back
+        </a>
+    </div>
+    <div role="main" class="ui-content" style="padding: 0%">
+        <div data-controltype="textblock" class="titlepage">
+            <p>
+                INSPIRATION
+            </p>
+        </div>
+        <div style=" text-align:center" data-controltype="image">
+            <img style="width: 100%; height: px" src="images/picinspiration.jpg">
+        </div>
+        <div data-controltype="textblock" class="titlearticle">
+            <p>
+                INSPIRED BY A HISTORY THAT BRINGS PRIDE.
+            </p>
+        </div>
+        <div data-controltype="textblock" class="textcontent">
+            <p>
+                Di awal abad 19, Kota Batu berkembang menjadi tujuan wisata favorit orang
+                Belanda, sehingga mereka membangun vila dan bahkan hunian pribadi di Kota
+                Batu. Situs dan bangunan-bangunan peninggalan Belanda tersebut bahkan menjadi
+                aset dan objek wisata hingga saat ini. Begitu terpesonanya Bangsa Belanda
+                atas keindahan dan keelokan Batu, sehingga mereka mensejajarkan kota ini
+                dengan Switzerland, sebuah negara di Eropa.
+            </p>
+            <p>
+                Catatan sejarah tersebut merupakan inspirasi dari Holland Park, sebuah
+                5-star resort condotel yang dikembangkan dengan konsep Contemporary Holland
+                yang modern dan premium. Dengan pesatnya perkembangan pariwisata dan perekonomian
+                di Kota Batu, hadirnya sebuah kawasan wisata baru dengan konsep yang unik
+                dan standar pelayanan bintang lima diproyeksikan akan menjadi prospek investasi
+                yang sangat menjanjikan serta meningkatkan value dari Kota Batu itu sendiri.
+            </p>
+        </div>
+    </div>
+</div>
+<div data-role="page" data-control-title="architecture" id="pagearchitecture">
+    <div data-theme="d" data-role="header" data-position="fixed" class="headers">
+        <span class="ui-title">
+        </span>
+        <a data-inline="true" data-direction="reverse" data-transition="slidefade"
+        href="#pageconcept" data-icon="arrow-l" data-iconpos="left" class="ui-btn ui-btn-left ui-icon-arrow-l ui-btn-icon-left titlebackbutton">
+            back
+        </a>
+    </div>
+    <div role="main" class="ui-content" style="padding: 0%">
+        <div data-controltype="textblock" class="titlepage">
+            <p>
+                ARCHITECTURE
+            </p>
+        </div>
+        <div style=" text-align:center" data-controltype="image">
+            <img style="width: 100%; height: px" src="images/picarchitecture1.jpg">
+        </div>
+        <div data-controltype="textblock" class="titlearticle">
+            <p>
+                DESIGNED TO RECREATE THE ELEGANCE OF CONTEMPORARY HOLLAND ARCHITECTURE
+            </p>
+        </div>
+        <div data-controltype="textblock" class="textcontent">
+            <p>
+                Arsitektur Holland Park didesain dengan gaya Contemporary Holland yang
+                modern dan premium. Adanya courtyard sebagai ruang publik terbuka setelah
+                drop off area seperti resort di mancanegara, desain fasade megah yang berkesan
+                transparan, taman bunga eksotis, wedding chapel dengan Holland prewedding
+                concept, Holland shop, 5-star Holland dining concept, semakin diperkaya
+                dengan eksplorasi bentukan dan material demi terciptanya sebuah orisinalitas..&nbsp;
+            </p>
+        </div>
+        <div style=" text-align:center" data-controltype="image">
+            <img style="width: 100%; height: px" src="images/picarchitecture2.jpg">
+        </div>
+        <div data-controltype="textblock" class="textcontent">
+            <p>
+                Holland Park terdiri atas 258 condotel eksklusif yang terbagi dalam 4
+                tower. Setiap tower memiliki 2 tipe dengan luasan dan view yang berbeda:
+                tipe Suite pada lantai 1-5 dan tipe Sky Villa pada lantai 6. Arsitekturnya
+                memperhatikan unsur fengshui, mulai dari posisi bangunan induk hingga arah
+                mata angin dan layout setiap unitnya
+            </p>
+        </div>
+        <div style=" text-align:center" data-controltype="image">
+            <img style="width: 100%; height: px" src="images/picarchitecture3.jpg">
+        </div>
+    </div>
+</div>
+<div data-role="page" data-control-title="interior" id="pageinterior">
+    <div data-theme="d" data-role="header" data-position="fixed" class="headers">
+        <span class="ui-title">
+        </span>
+        <a data-inline="true" data-direction="reverse" data-transition="slidefade"
+        href="#pageconcept" data-icon="arrow-l" data-iconpos="left" class="ui-btn ui-btn-left ui-icon-arrow-l ui-btn-icon-left titlebackbutton">
+            back
+        </a>
+    </div>
+    <div role="main" class="ui-content" style="padding: 0%">
+        <div data-controltype="textblock" class="titlepage">
+            <p>
+                INTERIOR
+            </p>
+        </div>
+        <div style=" text-align:center" data-controltype="image">
+            <img style="width: 100%; height: px" src="images/picinterior.jpg">
+        </div>
+        <div data-controltype="textblock" class="titlearticle">
+            <p>
+                STYLISH MODERN ARCHITECTURE WITH REFRESHING AMBIANCE
+            </p>
+        </div>
+        <div data-controltype="textblock" class="textcontent">
+            <p>
+                Interior dari Holland Park didesain oleh Looney Associates dari Amerika
+                yang portfolionya telah tersebar di hotel-hotel mewah mancanegara. Ambiance
+                resort yang memadukan kehangatan Holland dan keeleganan contemporary modern
+                living menjadi ide sentral dari konsep interior Holland Park.
+            </p>
+        </div>
+    </div>
+</div>
+<div data-role="page" data-control-title="facilities" id="pagefacilities">
+    <div data-theme="d" data-role="header" data-position="fixed" class="headers">
+        <span class="ui-title">
+        </span>
+        <a data-inline="true" data-direction="reverse" data-transition="slidefade"
+        href="#pageconcept" data-icon="arrow-l" data-iconpos="left" class="ui-btn ui-btn-left ui-icon-arrow-l ui-btn-icon-left titlebackbutton">
+            back
+        </a>
+    </div>
+    <div role="main" class="ui-content" style="padding: 0%">
+        <div data-controltype="textblock" class="titlepage">
+            <p>
+                FACILITIES
+            </p>
+        </div>
+        <div style=" text-align:center" data-controltype="image">
+            <img style="width: 100%; height: px" src="images/picfacilities.jpg">
+        </div>
+        <div data-controltype="textblock" class="titlearticle">
+            <p>
+                5-STAR FACILITIES &amp; FIRST-CLASS GUEST SERVICE
+            </p>
+        </div>
+        <div data-controltype="textblock" class="textcontent">
+            <p>
+                Holland Park dilengkapi dengan fasilitas hotel berbintang lima seperti
+                ballroom, meeting room, 5-star dining, gym &amp; spa, cigarette &amp; wine
+                room, wedding chapel dan berbagai fasilitas lainnya. Kesemuanya dipadukan
+                dengan pelayanan prima yang berfokuskan pada kenyamanan pengunjung serta
+                perhatian yang mendetail mulai dari proses check-in, sampai hari terakhir
+                pengunjung meninggalkan hotel.
+            </p>
+        </div>
+    </div>
+</div>
+<div data-role="page" data-control-title="masterplan" id="pagemasterplan">
+    <div data-theme="d" data-role="header" data-position="fixed" class="headers">
+        <span class="ui-title">
+        </span>
+        <a data-inline="true" data-direction="reverse" data-transition="slidefade"
+        href="#pageconcept" data-icon="arrow-l" data-iconpos="left" class="ui-btn ui-btn-left ui-icon-arrow-l ui-btn-icon-left titlebackbutton">
+            back
+        </a>
+    </div>
+    <div role="main" class="ui-content" style="padding: 0%">
+        <div data-controltype="textblock" class="titlepage">
+            <p>
+                MAGNIFICENT MASTERPLAN
+            </p>
+        </div>
+        <div style=" text-align:center" data-controltype="image">
+            <img style="width: 100%; height: px" src="images/picmasterplan.jpg">
+        </div>
+        <div class="ui-grid-a gridmasterplan">
+            <div class="ui-block-a">
+                <div style="" data-controltype="image">
+                    <img style="width: 100%; height: px" src="images/textmasterplan1.png">
+                </div>
+            </div>
+            <div class="ui-block-b">
+                <div style="" data-controltype="image">
+                    <img style="width: 100%; height: px" src="images/textmasterplan2.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div data-role="page" data-control-title="location" id="pagelocation">
+    <div data-theme="d" data-role="header" data-position="fixed" class="headers">
+        <span class="ui-title">
+        </span>
+        <a data-inline="true" data-direction="reverse" data-transition="slidefade"
+        href="#pageconcept" data-icon="arrow-l" data-iconpos="left" class="ui-btn ui-btn-left ui-icon-arrow-l ui-btn-icon-left titlebackbutton">
+            back
+        </a>
+    </div>
+    <div role="main" class="ui-content" style="padding: 0%">
+        <div data-controltype="textblock" class="titlepage">
+            <p>
+                LOCATION
+            </p>
+        </div>
+        <div style=" text-align:center" data-controltype="image">
+            <img style="width: 100%; height: px" src="images/piclocation.jpg">
+        </div>
+        <div data-controltype="textblock" class="titlearticle">
+            <p>
+                THE MOST STRATEGIC LOCATION IN BATU
+            </p>
+        </div>
+        <div data-controltype="textblock" class="textcontent">
+            <p>
+                LONJAKAN PENGUNJUNG KE BATU SUDAH SAMA ATAU BISA MELEBIHI DENPASAR, BALI.
+                BATU DIAM-DIAM MENJADI DAERAH TUJUAN WISATA BARU.
+            </p>
+            <p>
+                <span style="font-size: x-small;" data-mce-style="font-size: x-small;">
+                    ~ Artikel Kompas, 16 November 2013
+                </span>
+            </p>
+            <p>
+                <span>
+                    <br>
+                </span>
+            </p>
+            <p>
+                Batu… Kota wisata yang akan mempesona setiap jiwa yang penat akan kompleksitas
+                kehidupan metropolitan dengan keindahan alam yang memikat dan berbagai
+                objek wisatanya. Dijuluki sebagai The Real Tourism City oleh Bappenas,
+                kota ini telah berkembang menjadi ikon pariwisata di Jawa Timur. Dengan
+                jumlah wisatawan sebanyak 4 juta, pada tahun 2012 Batu bahkan mengungguli
+                Bali yang dikunjungi 3.5 juta orang wisatawan sebagai tujuan wisata favorit.
+            </p>
+            <p>
+                HOLLAND PARK terletak di lokasi paling strategis dari Kota Batu, hanya
+                selangkah dari Jatim Park, Museum Satwa dan Batu Night Square yang festive
+                dan merupakan pusat ekonomi pariwisata dari kota Batu. Berada di ketinggian
+                800 meter diatas permukaan laut, Holland Park menawarkan keindahan panorama
+                pegunungan dan perbukitan yang memikat.
+            </p>
+        </div>
+        <div style="" data-controltype="image" id="maplocation">
+            <img style="width: 100%; height: px" src="images/map.png">
+        </div>
+    </div>
+</div>
+<div data-role="page" data-control-title="profile" id="pageprofile">
+    <div data-theme="d" data-role="header" data-position="fixed" class="headers">
+        <span class="ui-title">
+        </span>
+        <a data-inline="true" data-direction="reverse" data-transition="slidefade"
+        href="#pagehome" data-icon="home" data-iconpos="left" class="ui-btn ui-btn-left ui-icon-home ui-btn-icon-left titlehomebutton">
+            home
+        </a>
+    </div>
+    <div role="main" class="ui-content" style="padding: 0%">
+        <div data-controltype="textblock" class="titlepage">
+            <p>
+                WORLDWIDE COLLABORATION
+            </p>
+        </div>
+        <div style=" text-align:center" data-controltype="image" class="picfirst">
+            <img style="width: 100%; height: px" src="images/picprofile.jpg">
+        </div>
+        <ul data-role="listview" data-divider-theme="b" data-inset="false" class="titlelistview">
+            <li data-theme="a">
+                <a href="#pagearchitect" data-transition="slidefade">
+                                        <img src="images/thumbarchitec.png" class="ui-li-thumb">
+
+                    <h5>ARCHITECT</h5>
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#pageconsultant" data-transition="slidefade">
+                                            <img src="images/thumbinterior2.png" class="ui-li-thumb">
+<h5>INTERIOR CONSULTANT</h5>
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#pageoperator" data-transition="slidefade">
+                                        <img src="images/thumboperator.png" class="ui-li-thumb">
+                    <h5>HOTEL OPERATOR</h5>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div data-role="tabbar" data-iconpos="top" data-theme="d" class="tabmenu">
+        <ul>
+            <li>
+                <a href="#pageconcept" data-transition="fade" data-theme="" data-icon="bars">
+                    CONCEPT
+                </a>
+            </li>
+            <li>
+                <a href="#pageprofile" data-transition="fade" data-theme="" data-icon="star">
+                    PROFILE
+                </a>
+            </li>
+            <li>
+                <a href="#pageskyvilla" data-transition="fade" data-theme="" data-icon="info">
+                    UNITS
+                </a>
+            </li>
+            <li>
+                <a href="#pagegallery" data-transition="fade" data-theme="" data-icon="grid">
+                    GALLERY
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div data-role="page" data-control-title="architect" id="pagearchitect">
+    <div data-theme="d" data-role="header" data-position="fixed" class="headers">
+        <span class="ui-title">
+        </span>
+        <a data-inline="true" data-direction="reverse" data-transition="slidefade"
+        href="#pageprofile" data-icon="arrow-l" data-iconpos="left" class="ui-btn ui-btn-left ui-icon-arrow-l ui-btn-icon-left titlebackbutton">
+            back
+        </a>
+    </div>
+    <div role="main" class="ui-content" style="padding: 0%">
+        <div data-controltype="textblock" class="titlepage">
+            <p>
+                ARCHITECT
+            </p>
+        </div>
+        <div data-controltype="textblock" class="titlearticle">
+            <p>
+                WHEN LOCAL MEETS GLOBAL, A MASTERPIECE IS BORN.
+            </p>
+        </div>
+        <div data-controltype="textblock" class="textcontent">
+            <p>
+                ARSITEKTUR HOLLAND PARK MERUPAKAN HASIL SINERGI YANG SOLID ANTARA 5G STUDIO
+                - KONSULTAN ARSITEK AMERIKA, DENGAN SONNY &amp; SONS - KONSULTAN ARSITEK
+                INDONESIA.
+            </p>
+        </div>
+        <div style=" text-align:center" data-controltype="image">
+            <img style="width: 100%; height: px" src="images/picarchitec1.gif">
+        </div>
+        <div data-controltype="textblock" class="textcontent">
+            <p>
+                5G Studio, konsultan arsitek ternama dari Amerika yang telah berpengalaman
+                selama puluhan tahun dalam mendesain hotel berkelas internasional, baik
+                di Amerika maupun di banyak negara lain. Studio ini terkenal dengan pendekatan
+                desain yang holistik dan berfokuskan pada lifecycle dan marketability dari
+                setiap karyanya.
+            </p>
+        </div>
+        <div style=" text-align:center" data-controltype="image">
+            <img style="width: 100%; height: px" src="images/picarchitect2.gif">
+        </div>
+        <div data-controltype="textblock" class="textcontent">
+            <p>
+                Didirikan pada tahun 1981 dengan nama Sonny Architecture Consultant, konsultan
+                arsitek ini kemudian direbranding menjadi Sonny &amp; Sons seiring dengan
+                bergabungnya Aditya KN M. Arch. Konsultan arsitek ini terus berkembang
+                hingga kini menjadi salah satu konsultan arsitek ternama di Indonesia.
+                Solusi total mulai dari konsep, perencanaan, finansial, hingga proses pembangunan,
+                membuat Sonny &amp; Sons meraih kesuksesan dalam mewarnai landscape kota
+                urban di Indonesia dalam berbagai sektor seperti residensial, komersial
+                dan retail. &nbsp;
+            </p>
+        </div>
+    </div>
+</div>
+<div data-role="page" data-control-title="consultant" id="pageconsultant">
+    <div data-theme="d" data-role="header" data-position="fixed" class="headers">
+        <span class="ui-title">
+        </span>
+        <a data-inline="true" data-direction="reverse" data-transition="slidefade"
+        href="#pageprofile" data-icon="arrow-l" data-iconpos="left" class="ui-btn ui-btn-left ui-icon-arrow-l ui-btn-icon-left titlebackbutton">
+            back
+        </a>
+    </div>
+    <div role="main" class="ui-content" style="padding: 0%">
+        <div data-controltype="textblock" class="titlepage">
+            <p>
+                INTERIOR CONSULTANT
+            </p>
+        </div>
+        <div style="" data-controltype="image" id="logolooney">
+            <img style="width: 50%; height: px" src="images/logolooney.gif">
+        </div>
+        <div data-controltype="textblock" class="textcontent">
+            <p>
+                Interior dari Holland Park didesain oleh Looney Associates, konsultan
+                interior dari Amerika dengan portfolio yang telah tersebar di hotel-hotel
+                mewah mancanegara seperti Hyatt Chicago, Hilton CHicago, &nbsp;Grand Hyatt
+                Denver, Casa Marina Florida, Omni Fort Worth Texas, dll.
+            </p>
+        </div>
+    </div>
+</div>
+<div data-role="page" data-control-title="operator" id="pageoperator">
+    <div data-theme="d" data-role="header" data-position="fixed" class="headers">
+        <span class="ui-title">
+        </span>
+        <a data-inline="true" data-direction="reverse" data-transition="slidefade"
+        href="#pageprofile" data-icon="arrow-l" data-iconpos="left" class="ui-btn ui-btn-left ui-icon-arrow-l ui-btn-icon-left titlebackbutton">
+            back
+        </a>
+    </div>
+    <div role="main" class="ui-content" style="padding: 0%">
+        <div data-controltype="textblock" class="titlepage">
+            <p>
+                HOTEL OPERATOR
+            </p>
+        </div>
+        <div style="" data-controltype="image">
+            <img style="width: 100%; height: px" src="images/picoperator.gif">
+        </div>
+        <div data-controltype="textblock" class="titlearticle">
+            <p>
+                TOP-NOTCH WORLDWIDE HOTEL OPERATOR
+            </p>
+        </div>
+        <div data-controltype="textblock" class="textcontent">
+            <p>
+                Holland Park dioperasikan oleh Golden Tulip, sebuah jaringan hotel internasional
+                yang telah berpengalaman selama lebih dari 50 tahun dalam memanajemeni
+                dan mengoperasikan hotel-hotel mewah serta resort-resort eksklusif. Sekarang
+                jaringan hotelnya telah tersebar di 42 negara dan terus bertambah tiap
+                tahunnya. Setiap hotel yang dikelola oleh Golden Tulip merupakan hotel
+                dengan standar kualitas internasional dan ditunjang oleh ambiance lokal
+                yang unik. &nbsp; &nbsp;
+            </p>
+        </div>
+        <div style="" data-controltype="image">
+            <img style="width: 100%; height: px" src="images/picoperator2.jpg">
+        </div>
+    </div>
+</div>
+<div data-role="page" data-control-title="units skyvilla" id="pageskyvilla">
+    <div data-theme="d" data-role="header" data-position="fixed" class="headerstab">
+        <span class="ui-title">
+        </span>
+        <a data-inline="true" data-direction="reverse" data-transition="slidefade"
+        href="#pagehome" data-icon="home" data-iconpos="left" class="ui-btn ui-btn-left ui-icon-home ui-btn-icon-left titlehomebutton">
+            home
+        </a>
+        <div data-role="navbar" data-iconpos="top" class="titletab">
+            <ul>
+                <li>
+                    <a href="#pageskyvilla" data-transition="none" data-theme="a" data-icon="">
+                        SKY VILLA
+                    </a>
+                </li>
+                <li>
+                    <a href="#pagesuite" data-transition="none" data-theme="" data-icon="">
+                        SUITE
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div role="main" class="ui-content" style="padding: 0%">
+        <div data-controltype="textblock" class="titlepage">
+            <p>
+                SKY VILLA TYPE
+            </p>
+        </div>
+        <div style=" text-align:center" data-controltype="image">
+            <img style="width: 100%; height: px" src="images/picskyvilla1.jpg">
+        </div>
+        <div data-controltype="textblock" class="textcontent">
+            <p>
+                Tipe Sky Villa ditawarkan secara eksklusif sebanyak 18 unit, yang terdiri
+                atas 6 unit 1-bedroom dan 12 unit 2-bedroom. 1-bedroom Sky Villa diciptakan
+                secara istimewa untuk para eksekutif muda yang ingin memanjakan pasangannya
+                dengan suasana honeymoon di negeri kincir angin Belanda.
+                <br>
+            </p>
+        </div>
+        <div style=" text-align:center" data-controltype="image">
+            <img style="width: 100%; height: px" src="images/picskyvilla2.jpg">
+        </div>
+        <div style=" text-align:center" data-controltype="image" id="villaliving">
+            <img style="width: 100%; height: px" src="images/picskyvilla5.jpg">
+        </div>
+        <div style=" text-align:center" data-controltype="image" id="villabath">
+            <img style="width: 100%; height: px" src="images/picskyvilla3.jpg">
+        </div>
+        <div id="textcontentskyvilla" data-controltype="textblock" class="textcontent">
+            <p>
+                Sky Villa didesain secara unik dengan mengedepankan harmoni antara estetika
+                dan fengshui sehingga setiap unitnya memiliki luasan dan detail layout
+                yang berbeda-beda.
+            </p>
+        </div>
+        <div data-controltype="htmlblock" class="mapblock">
+            <div id="map">
+                <img id="BG" src="images/planskyvilla.png">
+                <a href="#pageskyvilladenhaag" data-transition="fade">
+                    <img id="pointer" src="images/iconplus.gif">
+                </a>
+                <a href="#pageskyvillavolendam" data-transition="fade">
+                    <img id="pointer2" src="images/iconplus.gif">
+                </a>
+                <a href="#pageskyvillaamsterdam" data-transition="fade">
+                    <img id="pointer3" src="images/iconplus.gif">
+                </a>
+                <a href="#pageskyvillarotterdam" data-transition="fade">
+                    <img id="pointer4" src="images/iconplus.gif">
+                </a>
+            </div>
+        </div>
+        <div style=" text-align:center" data-controltype="image" id="picswim">
+            <img style="width: 100%; height: px" src="images/picskyvilla4.jpg">
+        </div>
+        <div data-controltype="textblock" class="textcontent">
+            <p>
+                Didesain dengan mengutamakan privasi dan kemewahan, setiap unit Sky Villa
+                dilengkapi dengan private pool untuk memanjakan para pengunjungnya. Setiap
+                tower Sky Villa juga dilengkapi dengan seorang butler yang akan membantu
+                para penghuni dalam menyelesaikan pekerjaan rumah sehari-hari.&nbsp;
+                <br>
+            </p>
+        </div>
+    </div>
+    <div data-role="tabbar" data-iconpos="top" data-theme="d" class="tabmenu">
+        <ul>
+            <li>
+                <a href="#pageconcept" data-transition="fade" data-theme="" data-icon="bars">
+                    CONCEPT
+                </a>
+            </li>
+            <li>
+                <a href="#pageprofile" data-transition="fade" data-theme="" data-icon="star">
+                    PROFILE
+                </a>
+            </li>
+            <li>
+                <a href="#pageskyvilla" data-transition="fade" data-theme="" data-icon="info">
+                    UNITS
+                </a>
+            </li>
+            <li>
+                <a href="#pagegallery" data-transition="fade" data-theme="" data-icon="grid">
+                    GALLERY
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div data-role="page" data-control-title="sky villa amsterdam" id="pageskyvillaamsterdam">
+    <div data-theme="d" data-role="header" data-position="fixed" class="headersplan">
+        <a data-direction="reverse" data-rel="back" data-transition="slidedown"
+        href="#pageskyvilla" data-icon="delete" class="ui-btn ui-btn-right ui-icon-delete ui-btn-icon-right">
+        </a>
+        <h3 class="ui-title title">
+            AMSTERDAM TOWER
+        </h3>
+    </div>
+    <div role="main" class="ui-content" style="padding: 0%">
+        <div data-controltype="textblock" class="titlepage">
+            <p>
+                SKY VILLA UNITS
+            </p>
+        </div>
+        <div style="" data-controltype="image" class="planssingle">
+            <img style="width: 100%; height: px" src="images/planamsterdam.jpg">
+        </div>
+        <div data-controltype="textblock" class="textcontent">
+            <p>
+                A1 NA : 245.56 sqm SGA: 275.27 sqm
+            </p>
+            <p>
+                A2 NA : 151.20 sqm SGA: 169.49 sqm
+            </p>
+            <p>
+                A3 NA : 151.20 sqm SGA: 169.49 sqm
+            </p>
+            <p>
+                A5 NA : 113.40 sqm SGA: 127.12 sqm
+            </p>
+            <p>
+                A6 NA : 75.60 sqm SGA: 84.75 sqm
+            </p>
+        </div>
+    </div>
+</div>
+<div data-role="page" data-control-title="sky villa rotterdam" id="pageskyvillarotterdam">
+    <div data-theme="d" data-role="header" data-position="fixed" class="headersplan">
+        <a data-direction="reverse" data-rel="back" data-transition="slidedown"
+        href="#pageskyvilla" data-icon="delete" data-iconpos="right" class="ui-btn ui-btn-right ui-icon-delete ui-btn-icon-right">
+        </a>
+        <h3 class="ui-title title">
+            ROTTERDAM TOWER
+        </h3>
+    </div>
+    <div role="main" class="ui-content" style="padding: 0%">
+        <div data-controltype="textblock" class="titlepage">
+            <p>
+                SKY VILLA UNITS
+            </p>
+        </div>
+        <div style="" data-controltype="image" class="planssingle">
+            <img style="width: 100%; height: px" src="images/planrotterdam.jpg">
+        </div>
+        <div data-controltype="textblock" class="textcontent">
+            <p>
+                R1 NA : 245.56 sqm SGA: 275.83 sqm
+            </p>
+            <p>
+                R2 NA : 75.60 sqm SGA: 84.92 sqm
+            </p>
+            <p>
+                R3 NA : 113.40 sqm SGA: 127.38 sqm
+            </p>
+            <p>
+                R5 NA : 151.20 sqm SGA: 169.84 sqm
+            </p>
+            <p>
+                R6 NA : 151.20 sqm SGA: 169.84 sqm
+            </p>
+        </div>
+    </div>
+</div>
+<div data-role="page" data-control-title="sky villa volendam" id="pageskyvillavolendam">
+    <div data-theme="d" data-role="header" data-position="fixed" class="headersplan">
+        <a data-direction="reverse" data-rel="back" data-transition="slidedown"
+        href="#pageskyvilla" data-icon="delete" data-iconpos="right" class="ui-btn ui-btn-right ui-icon-delete ui-btn-icon-right">
+        </a>
+        <h3 class="ui-title title">
+            VOLENDAM TOWER
+        </h3>
+    </div>
+    <div role="main" class="ui-content" style="padding: 0%">
+        <div data-controltype="textblock" class="titlepage">
+            <p>
+                SKY VILLA UNITS
+            </p>
+        </div>
+        <div style="" data-controltype="image" class="planssingle">
+            <img style="width: 100%; height: px" src="images/planvolendam.jpg">
+        </div>
+        <div data-controltype="textblock" class="textcontent">
+            <p>
+                V1 NA : 294.84 sqm SGA: 331.18 sqm
+            </p>
+            <p>
+                V2 NA : 199.98 sqm SGA: 224.63 sqm
+            </p>
+            <p>
+                V3 NA : 75.60 sqm SGA: 84.92 sqm
+            </p>
+            <p>
+                V5 NA : 113.40 sqm SGA: 127.38 sqm
+            </p>
+        </div>
+    </div>
+</div>
+<div data-role="page" data-control-title="sky villa denhaag" id="pageskyvilladenhaag">
+    <div data-theme="d" data-role="header" data-position="fixed" class="headersplan">
+        <a data-direction="reverse" data-rel="back" data-transition="slidedown"
+        href="#pageskyvilla" data-icon="delete" data-iconpos="right" class="ui-btn ui-btn-right ui-icon-delete ui-btn-icon-right">
+        </a>
+        <h3 class="ui-title title">
+            DEN HAAG TOWER
+        </h3>
+    </div>
+    <div role="main" class="ui-content" style="padding: 0%">
+        <div data-controltype="textblock" class="titlepage">
+            <p>
+                SKY VILLA UNITS
+            </p>
+        </div>
+        <div style="" data-controltype="image" class="planssingle">
+            <img style="width: 100%; height: px" src="images/plandenhaag.jpg">
+        </div>
+        <div data-controltype="textblock" class="textcontent">
+            <p>
+                D1 NA : 294.84 sqm SGA: 330.51 sqm
+            </p>
+            <p>
+                D2 NA : 113.40 sqm SGA: 127.12 sqm
+            </p>
+            <p>
+                D3 NA : 151.20 sqm SGA: 169.49 sqm
+            </p>
+            <p>
+                D5 NA : 151.20 sqm SGA: 169.49 sqm
+            </p>
+        </div>
+    </div>
+</div>
+<div data-role="page" data-control-title="units suite" id="pagesuite">
+    <div data-theme="d" data-role="header" data-position="fixed" class="headerstab">
+        <span class="ui-title">
+        </span>
+        <a data-inline="true" data-direction="reverse" data-transition="slidefade"
+        href="#pagehome" data-icon="home" data-iconpos="left" class="ui-btn ui-btn-left ui-icon-home ui-btn-icon-left titlehomebutton">
+            home
+        </a>
+        <div data-role="navbar" data-iconpos="top" class="titletab">
+            <ul>
+                <li>
+                    <a href="#pageskyvilla" data-transition="none" data-theme="" data-icon="">
+                        SKY VILLA
+                    </a>
+                </li>
+                <li>
+                    <a href="#pagesuite" data-transition="none" data-theme="a" data-icon="">
+                        SUITE
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div role="main" class="ui-content" style="padding: 0%">
+        <div data-controltype="textblock" class="titlepage">
+            <p>
+                SUITE TYPE
+            </p>
+        </div>
+        <div style=" text-align:center" data-controltype="image">
+            <img style="width: 100%; height: px" src="images/picsuite.jpg">
+        </div>
+        <div data-controltype="textblock" class="textcontent">
+            <p>
+                Tipe Suite ditawarkan sebanyak 240 unit, sesuai untuk pengunjung yang
+                menginginkan ambiance mewah namun tetap fungsional dengan view pegunungan
+                Kota Batu yang indah.
+            </p>
+        </div>
+        <div data-controltype="htmlblock" class="mapblock">
+            <div id="map">
+                <img id="BG" src="images/planskyvilla.png">
+                <a href="#pagesuitedenhaag" data-transition="fade">
+                    <img id="pointer" src="images/iconplus.gif">
+                </a>
+                <a href="#pagesuitevolendam" data-transition="fade">
+                    <img id="pointer2" src="images/iconplus.gif">
+                </a>
+                <a href="#pagesuiteamsterdam" data-transition="fade">
+                    <img id="pointer3" src="images/iconplus.gif">
+                </a>
+                <a href="#pagesuiterotterdam" data-transition="fade">
+                    <img id="pointer4" src="images/iconplus.gif">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div data-role="tabbar" data-iconpos="top" data-theme="d" class="tabmenu">
+        <ul>
+            <li>
+                <a href="#pageconcept" data-transition="fade" data-theme="" data-icon="bars">
+                    CONCEPT
+                </a>
+            </li>
+            <li>
+                <a href="#pageprofile" data-transition="fade" data-theme="" data-icon="star">
+                    PROFILE
+                </a>
+            </li>
+            <li>
+                <a href="#pagesuite" data-transition="fade" data-theme="" data-icon="info">
+                    UNITS
+                </a>
+            </li>
+            <li>
+                <a href="#pagegallery" data-transition="fade" data-theme="" data-icon="grid">
+                    GALLERY
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div data-role="page" data-control-title="suite den haag" id="pagesuitedenhaag">
+    <div data-theme="d" data-role="header" data-position="fixed" class="headersplan">
+        <a data-direction="reverse" data-rel="back" data-transition="slidedown"
+        href="#pagesuite" data-icon="delete" data-iconpos="right" class="ui-btn ui-btn-right ui-icon-delete ui-btn-icon-right">
+        </a>
+        <h3 class="ui-title title">
+            DEN HAAG TOWER
+        </h3>
+    </div>
+    <div role="main" class="ui-content" style="padding: 0%">
+        <div data-controltype="textblock" class="titlepage">
+            <p>
+                SUITE UNITS
+            </p>
+        </div>
+        <div style="" data-controltype="image" class="planssingle">
+            <img style="width: 100%; height: px" src="images/plandenhaagsuite.jpg">
+        </div>
+        <div data-controltype="textblock" class="textcontent">
+            <p>
+                NA : 37 sqm &nbsp; &nbsp; SGA: 45 sqm
+            </p>
+        </div>
+    </div>
+</div>
+<div data-role="page" data-control-title="suite volendam" id="pagesuitevolendam">
+    <div data-theme="d" data-role="header" data-position="fixed" class="headersplan">
+        <a data-direction="reverse" data-rel="back" data-transition="slidedown"
+        href="#pagesuite" data-icon="delete" data-iconpos="right" class="ui-btn ui-btn-right ui-icon-delete ui-btn-icon-right">
+        </a>
+        <h3 class="ui-title title">
+            VOLENDAM TOWER
+        </h3>
+    </div>
+    <div role="main" class="ui-content" style="padding: 0%">
+        <div data-controltype="textblock" class="titlepage">
+            <p>
+                SUITE UNITS
+            </p>
+        </div>
+        <div style="" data-controltype="image" class="planssingle">
+            <img style="width: 100%; height: px" src="images/planvolendamsuite.jpg">
+        </div>
+        <div data-controltype="textblock" class="textcontent">
+            <p>
+                NA : 37 sqm &nbsp; &nbsp; SGA: 45 sqm
+            </p>
+        </div>
+    </div>
+</div>
+<div data-role="page" data-control-title="suite amsterdam" id="pagesuiteamsterdam">
+    <div data-theme="d" data-role="header" data-position="fixed" class="headersplan">
+        <a data-direction="reverse" data-rel="back" data-transition="slidedown"
+        href="#pagesuite" data-icon="delete" data-iconpos="right" class="ui-btn ui-btn-right ui-icon-delete ui-btn-icon-right">
+        </a>
+        <h3 class="ui-title title">
+            AMSTERDAM TOWER
+        </h3>
+    </div>
+    <div role="main" class="ui-content" style="padding: 0%">
+        <div data-controltype="textblock" class="titlepage">
+            <p>
+                SUITE UNITS
+            </p>
+        </div>
+        <div style="" data-controltype="image" class="planssingle">
+            <img style="width: 100%; height: px" src="images/planamsterdamsuite.jpg">
+        </div>
+        <div data-controltype="textblock" class="textcontent">
+            <p>
+                NA : 37 sqm &nbsp; &nbsp; SGA: 45 sqm
+            </p>
+        </div>
+    </div>
+</div>
+<div data-role="page" data-control-title="suite rotterdam" id="pagesuiterotterdam">
+    <div data-theme="d" data-role="header" data-position="fixed" class="headersplan">
+        <a data-direction="reverse" data-rel="back" data-transition="slidedown"
+        href="#pagesuite" data-icon="delete" data-iconpos="right" class="ui-btn ui-btn-right ui-icon-delete ui-btn-icon-right">
+        </a>
+        <h3 class="ui-title title">
+            ROTTERDAM TOWER
+        </h3>
+    </div>
+    <div role="main" class="ui-content" style="padding: 0%">
+        <div data-controltype="textblock" class="titlepage">
+            <p>
+                SUITE UNITS
+            </p>
+        </div>
+        <div style="" data-controltype="image" class="planssingle">
+            <img style="width: 100%; height: px" src="images/planrotterdamsuite.jpg">
+        </div>
+        <div data-controltype="textblock" class="textcontent">
+            <p>
+                NA : 37 sqm &nbsp; &nbsp; SGA: 45 sqm
+            </p>
+        </div>
+    </div>
+</div>
+<div data-role="page" data-control-title="gallery" id="pagegallery">
+    <div data-theme="d" data-role="header" data-position="fixed" class="headers">
+        <span class="ui-title">
+        </span>
+        <a data-inline="true" data-direction="reverse" data-transition="slidefade"
+        href="#pagehome" data-icon="home" data-iconpos="left" class="ui-btn ui-btn-left ui-icon-home ui-btn-icon-left titlehomebutton">
+            home
+        </a>
+    </div>
+    <div role="main" class="ui-content" style="padding:0%;margin-top:2%">
+    
+    
+    <div id="gallery">
+
+<a href="images/aerialview.jpg" rel="external"><img src="images/aerialviewthumb.jpg" alt="AERIAL VIEW OF HOLLAND PARK" /></a>
+<a href="images/picarchitecture1.jpg" rel="external"><img src="images/picarchitecture1thumb.jpg" alt="COURTYARD AT ENTRANCE AREA" /></a>
+<a href="images/picinterior.jpg" rel="external"><img src="images/picinteriorthumb.jpg" alt="ENTRANCE LOBBY" /></a>
+<a href="images/picarchitecture2.jpg" rel="external"><img src="images/picarchitecture2thumb.jpg" alt="EXTERIOR VIEW FROM TERRACE LOUNGE" /></a>
+<a href="images/picarchitecture3.jpg" rel="external"><img src="images/picarchitecture3thumb.jpg" alt="EXTERIOR VIEW FROM CHAPEL" /></a>
+<a href="images/picfacilities.jpg" rel="external"><img src="images/picfacilitiesthumb.jpg" alt="5-STAR HOLLAND DINING  & GRAND BALLROOM" /></a>
+<a href="images/picskyvilla1.jpg" rel="external"><img src="images/picskyvilla1thumb.jpg" alt="SKYVILLA BEDROOM" /></a>
+<a href="images/picskyvilla2.jpg" rel="external"><img src="images/picskyvilla2thumb.jpg" alt="SKYVILLA LIVINGROOM" /></a>
+<a href="images/picskyvilla3.jpg" rel="external"><img src="images/picskyvilla3thumb.jpg" alt="SKYVILLA BATHROOM" /></a>
+<a href="images/picskyvilla5.jpg" rel="external"><img src="images/picskyvilla5thumb.jpg" alt="SKYVILLA DININGROOM" /></a>
+<a href="images/picsuite.jpg" rel="external"><img src="images/picsuitethumb.jpg" alt="SUITE BEDROOM" /></a>
+<a href="images/picmasterplan.jpg" rel="external"><img src="images/picmasterplanthumb.jpg" alt="MASTERPLAN" /></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    
+    </div>
+    <div data-role="tabbar" data-iconpos="top" data-theme="d" class="tabmenu">
+        <ul>
+            <li>
+                <a href="#pageconcept" data-transition="fade" data-theme="" data-icon="bars">
+                    CONCEPT
+                </a>
+            </li>
+            <li>
+                <a href="#pageprofile" data-transition="fade" data-theme="" data-icon="star">
+                    PROFILE
+                </a>
+            </li>
+            <li>
+                <a href="#pageskyvilla" data-transition="fade" data-theme="" data-icon="info">
+                    UNITS
+                </a>
+            </li>
+            <li>
+                <a href="#pagegallery" data-transition="fade" data-theme="" data-icon="grid">
+                    GALLERY
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div data-role="page" data-control-title="contact" id="pagecontact">
+    <div data-theme="d" data-role="header" data-position="fixed" class="headers">
+        <span class="ui-title">
+        </span>
+        <a data-inline="true" data-direction="reverse" data-transition="slidefade"
+        href="#pagehome" data-icon="home" data-iconpos="left" class="ui-btn ui-btn-left ui-icon-home ui-btn-icon-left titlehomebutton">
+            home
+        </a>
+    </div>
+    <div role="main" class="ui-content" style="padding: 0%">
+        <div data-controltype="textblock" class="titlepagecenter">
+            <p style="text-align: left;" data-mce-style="text-align: left;">
+                <br>
+            </p>
+            <p style="text-align: left;" data-mce-style="text-align: left;">
+                HEAD OFFICE
+            </p>
+        </div>
+        <div data-controltype="textblock" class="textcontentcenter">
+            <p style="text-align: left;">
+                Jl. Mayjen. Sungkono No. 75
+            </p>
+            <p style="text-align: left;">
+                Kavling A9, Surabaya
+            </p>
+            <p style="text-align: left;">
+                031 566 1333
+            </p>
+        </div>
+        <div data-controltype="textblock" class="titlepagecenter">
+            <p style="text-align: left;" data-mce-style="text-align: left;">
+                <br>
+            </p>
+            <p style="text-align: left;" data-mce-style="text-align: left;">
+                MARKETING GALLERY
+            </p>
+        </div>
+        <div data-controltype="textblock" class="textcontentcenter">
+            <p>
+                Jl. Dr. Sutomo No. 1
+            </p>
+            <p>
+                C-D 2nd floor, Surabaya
+            </p>
+            <p>
+                031 7200 8888
+            </p>
+            <p>
+                081 2233 88889
+            </p>
+            <p>
+                <br>
+            </p>
+        </div>
+        <div class="ui-grid-c callbutton">
+            <div class="ui-block-a">
+                <a href="tel:+623172008888" class="ui-btn ui-btn-b ui-icon-phones">
+                    PHONE 1
+                </a>
+            </div>
+            <div class="ui-block-b">
+                <a href="tel:+6281223388889" class="ui-btn ui-btn-b ui-icon-phones">
+                    PHONE 2
+                </a>
+            </div>
+            <div class="ui-block-c">
+                <a href="tel:+62315661333" class="ui-btn ui-btn-b ui-icon-phones">
+                    PHONE 3
+                </a>
+            </div>
+            <div class="ui-block-d">
+                <a href="mailto:admin@hollandparkbatu.com?&amp;subject=from%20Holland%20Park%20mobile"
+                class="ui-btn ui-btn-b ui-icon-mails">
+                    EMAIL
+                </a>
+            </div>
+        </div>
+        <div id="gridsocial" class="ui-grid-a">
+            <div class="ui-block-a">
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://hollandpark.architecgraphic.com"
+                data-icon="arrow-u" data-iconpos="left" class="ui-btn ui-btn-f ui-icon-arrow-u ui-btn-icon-left ui-icon-logofb">
+                    FACEBOOK
+                </a>
+            </div>
+            <div class="ui-block-b">
+                <a target="_blank" href="http://twitter.com/home?status=meet%20HOLLAND%20PARK,%20a%205-star%20condotel%20in%20Batu%20with%20Holland%20ambiance!%20bit.ly/hollandpark"
+                data-icon="arrow-u" data-iconpos="left" class="ui-btn ui-btn-e ui-icon-arrow-u ui-btn-icon-left ui-icon-logotwitter">
+                    TWITTER
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
